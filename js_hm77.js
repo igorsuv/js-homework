@@ -16,15 +16,15 @@ var arr = [
     },
 ];
 
-var emailRegex = /^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
+var emailRegex = /^[a-zA-Z0-9._]+@(?!mail\.ru)(?:gmail|yahoo)\.com$/;
 
 var goodEmails = [];
 for (var i = 0; i < arr.length; i++) {
-    var obj = arr[i];
-    if (obj.email.match(emailRegex) !== null && (obj.email.endsWith('@gmail.com') || obj.email.endsWith('@yahoo.com'))) {
-        goodEmails.push(obj);
+    var email = arr[i].email;
+    if (email.match(emailRegex) !== null) {
+        goodEmails.push(email);
     }
 }
 
 console.log(goodEmails);
+
