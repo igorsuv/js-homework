@@ -2,7 +2,7 @@
 
 let num = 'number'
 let num_2 = 3
-let = num_3 = 3
+let num_3 = 3
 
 console.log(num + num_2 + num_3) // тут відбулася конкатинація 1 строки та 2 цифр. (Вивід в консолі : number33 )
 
@@ -28,8 +28,8 @@ console.log(result)   // у цьому випадку num_6 буде true, та 
 
 let num_8 = '40'
 let num_9 = '2'
-let_num_10 = 'hillel'
-let result_2 = +num_8 + +num_9 + let_num_10
+let num_10 = 'hillel'
+let result_2 = +num_8 + +num_9 + num_10
 console.log(result_2) // знак "+" перед строкою переводить тип string в number. Якщо у виразі э хоч 1 string то в такому випадку випадку відбуваеться,
                       // конкатинація. Тобто '40'(стало number); '2'(стало number); 'hillel'(string) 
                       //  (Вивід в консолі : 42hillel ).
